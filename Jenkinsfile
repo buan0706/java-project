@@ -18,7 +18,7 @@ node('linux') {
     
     stage ("Deploy") {
 
-        //sh "aws ec2 describe-instances --region us-east-1"
+        echo "/workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar"
         
     }
     
