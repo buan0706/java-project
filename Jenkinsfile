@@ -18,7 +18,7 @@ node('linux') {
     
     stage ("Deploy") {
 
-        echo "/workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar"
+        sh "aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://buan0706-bucket/rectangle-${BUILD_NUMBER}.jar"
         
     }
     
