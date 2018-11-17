@@ -24,7 +24,7 @@ node('linux') {
     
     stage ("Report") {
 
-        //sh "aws ec2 describe-instances --region us-east-1"
+        sh "aws cloudformation describe-stack-resources --region us-east-1 --stack-name jenkins"
         
     }    
 
