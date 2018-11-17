@@ -12,7 +12,7 @@ node('linux') {
     
     stage ("Build") {
 
-        //sh "aws ec2 describe-instances --region us-east-1"
+        sh "ant -f build.xml -v"
         
     }
     
